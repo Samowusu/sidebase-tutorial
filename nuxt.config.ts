@@ -10,7 +10,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     version: '0.0.1'
   },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-svgo', '@huntersofbook/naive-ui-nuxt', 'nuxt-icons', 'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-svgo', '@huntersofbook/naive-ui-nuxt', 'nuxt-icons', 'nuxt-icon', '@sidebase/nuxt-auth'],
+  auth: {
+    provider: {
+      type: 'authjs'
+    }
+  },
   extends: ['@sidebase/core'],
   typescript: {
     shim: false

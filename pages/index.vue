@@ -14,12 +14,12 @@ const handleToggleTab = (tab) => {
 
 <template>
   <div>
-    <header className="sticky top-0 z-10 border-b bg-white pt-2">
-      <h1 className="mb-2 px-4 text-lg font-bold">
+    <header class="sticky top-0 z-10 border-b bg-white pt-2">
+      <h1 class="mb-2 px-4 text-lg font-bold">
         Home
       </h1>
 
-      <div v-for="tab in TABS" :key="tab" className="flex">
+      <div v-for="tab in TABS" :key="tab" class="flex">
         <button
           :class="['focus-visible:bg-gray-20 flex-grow p-2 hover:bg-gray-200', tab === selectedTabState ? 'border-b-4 border-b-blue-500 font-bold' : '']"
           @click="handleToggleTab(tab)"
