@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     shim: false
   },
   build: {
-    transpile: ['oh-vue-icons'],
+    transpile: ['oh-vue-icons', 'trpc-nuxt'],
     postcss: {
       postcssOptions: {
         plugins: {
